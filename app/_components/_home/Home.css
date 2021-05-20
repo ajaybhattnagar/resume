@@ -1,0 +1,54 @@
+  
+  .containermain {
+    position:relative;
+    background: black;
+    height: 80vh;
+    /* z-index:2; */
+    /* overflow:hidden; */
+  }
+
+  .centerMainText{
+    margin: 0;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+  }
+  
+.testMargin{
+    margin-top: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+.hidescollbar{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {display:none;}
+
+
+
+/* *******About****** */
+.containerAbout {
+    position:relative;
+    background: rgba(0, 0, 0, 0.9);
+    height: 500px;
+    padding-top: 50px;
+    /* z-index:2; */
+    /* overflow:hidden; */
+  }
+
+  .photo{
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      vertical-align: middle;
+      border: 5px solid #555;
+  }

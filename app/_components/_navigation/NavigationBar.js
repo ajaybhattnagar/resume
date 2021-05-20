@@ -7,21 +7,7 @@ class NavigationBar extends Component {
 
     render() {
         return (
-            <Navbar bg="primary" variant="dark">
-                <Navbar.Brand href="/">
-                <img
-                    alt='coronavirus'
-                    src={Brand}
-                    width='36'
-                    height='36'
-                    className='d-inline-block align-top'
-                />
-                </Navbar.Brand>
-                <Nav className="mr-auto">
-                    <Nav.Link href="/"><strong>Home</strong></Nav.Link>
-                    <Nav.Link href="/about"><strong>About</strong></Nav.Link>
-                </Nav>
-            </Navbar>
+            <div></div>
         );
     }
 }
