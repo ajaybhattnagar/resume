@@ -1,0 +1,117 @@
+{
+  "education": [
+    {
+      "school": "Texas McCombs",
+      "degree": "Post Graduate in Artifical Intelligence and Machine Learning",
+      "graduated": "2021",
+      "description": []
+    },
+    {
+      "school": "The University of Texas at Arlington",
+      "degree": "Masters degree, Systems Engineering",
+      "graduated": "2017 - 2019",
+      "description": []
+    },
+    {
+      "school": "SRM University",
+      "degree": "Bachelors's in Mechatronics Engineering",
+      "graduated": "2012 - 2016",
+      "description": [
+        "Worked as Organizer committee member in a national level Techno - Management fest organised by SRM University.",
+        "Participated in Robot war event conducted by The association of Production ,towards Green Manufacturing held by Madras Institute of Technology."
+      ]
+    }
+  ],
+  "work": [
+    {
+      "employeer": "POWERsonic Industries",
+      "position": "Quality Specialist",
+      "duration": "March - 2019",
+      "description": [
+        "Responsible for developing a set of best practices and processes related to site evaluation, vendor selection, deployment, and operations of charging infrastructure.",
+        "Decreased customer complaints rate by 20% by analyzing the internal rejections, cost of quality and making efficient corrective and preventive actions.",
+        "Optimized current work flow by using digital factory, gigatack and excel to achieve higher on-time delivery.",
+        "Developed programs, 5S, Kaizen and value stream map tools saved $100K on tooling, 20% space, and four operators.",
+        "Develop and support existing complex MS Excel macro and query enabled workbooks.",
+        "Conduct business process analysis to identify areas that could be streamlined or automated.",
+        "Responsible for daily and monthly recurring reporting.",
+        "Responsible for identifying KPI and creating automated reports to meet them.",
+        "Coordinating with R&D, Regulatory & QC for updating the Quality management system from ISO 9001:2008 to 2015."
+      ]
+    },
+    {
+      "employeer": "ProSource Industries",
+      "position": "Quality Manager",
+      "duration": "July - 2018     March - 2019",
+      "description": [
+        "Responsible in the development and implementation of assure quality control procedures, work instructions, and forms to coincide with operational and process related changes to daily work flow.",
+        "Responsible for selecting and administering training programs as required educating the workforce and accomplishing long term goals by system performance and managing ISO 9001-2008 Quality Management System.",
+        "Reduced Quality processing time by 50% by designing and implementing an Excel VBA database that eliminated redundant steps which required processing customer complaints and non-conforming products.",
+        "Increased on-time deliveries by 28% by utilizing data from multiple worksheets to determine top customers and major projects with high profit regions. This was determined by tracking Key performance indicators in selected regions found through data mining.",
+        "Achieved 55% labor cost saving by cross training workers in selected areas and improved test plans.",
+        "Customer returns reduced from 1.34% to 0.31% in first 2 months by initiating Agile and Lean methodologies."
+      ]
+    },
+    {
+      "employeer": "E-Tech",
+      "position": "Quality Engineer",
+      "duration": "Feb - 2016     Dec - 2016",
+      "description": [
+        "Ensure effective implementation and maintenance of the ISO certified Quality System including modifications and communication of changes to the organization, monitoring of audit schedules, and facilitating outside certification body auditors",
+        "Lead investigations into internal and external quality issues using methods such as 5-Why, 8D, Fishbone, etc.",
+        "Maintain and monitor corrective and preventive action processes including those incurred from audit findings, product non-conformances, and supplier non-conformances. ",
+        "Coordinate transition of new / modified component and finished goods product through the validation process with manufacturing and suppliers",
+        "Support and coordinate reliability testing the internal and external laboratories for components and finished products.",
+        "Complete statistical studies including gage R&Rs, and capability, pareto and trend analysis to identify manufacturing capability levels and opportunities for improvement within the manufacturing processes."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "MS Project",
+      "level": "60%"
+    },
+    {
+      "name": "Illustrator",
+      "level": "55%"
+    },
+    {
+      "name": "ReactJs",
+      "level": "50%"
+    },
+    {
+      "name": "CSS",
+      "level": "90%"
+    },
+    {
+      "name": "HTML5",
+      "level": "80%"
+    },
+    {
+      "name": "VueJs",
+      "level": "50%"
+    },
+    {
+      "name": "MongoDB",
+      "level": "80%"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Custom ShopFloor Website",
+      "image": "https://static.wixstatic.com/media/c21113_1c0b783ed07b46bca8d85de18e233448~mv2.gif",
+      "url": "https://www.funwithvisual.com/post/custom-shopfloor-website"
+    },
+    {
+      "title": "Customized reports",
+      "image": "https://1.bp.blogspot.com/-nzm908Pfunw/VqXgeRNp4LI/AAAAAAAACJI/wgeVntLSIT8/w1200-h630-p-k-no-nu/status-report.png",
+      "url": "https://www.funwithvisual.com/post/a-different-faster-way-of-doing-customized-reports"
+    },
+    {
+      "title": "Visual ERP Blog",
+      "image": "https://static.wixstatic.com/media/11062b_9b52a0adb0ac4756a04a9e7aeaa7ce3d~mv2.jpeg/v1/fill/w_1903,h_856,al_c,q_85,usm_0.66_1.00_0.01/11062b_9b52a0adb0ac4756a04a9e7aeaa7ce3d~mv2.webp",
+      "url": "https://www.funwithvisual.com/"
+    }
+  ]
+
+}

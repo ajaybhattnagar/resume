@@ -31,6 +31,29 @@ html {
     overflow: hidden;
 }
 
+.descText{
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.linkedinImage{
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  position: relative;
+  margin-top: 200px;
+}
+
+.linkedinImage:hover{
+  opacity:1;
+  height: 30px;
+  width: 30px; 
+}
+
+.navbarwidth{
+  width: 20px;
+}
+
 ::-webkit-scrollbar {display:none;}
 
 
@@ -39,7 +62,7 @@ html {
 .containerAbout {
     position:relative;
     background: rgba(0, 0, 0, 0.9);
-    height: 500px;
+    height: 450px;
     padding-top: 50px;
     /* z-index:2; */
     /* overflow:hidden; */
@@ -52,3 +75,96 @@ html {
       vertical-align: middle;
       border: 5px solid #555;
   }
+
+
+
+  /* *******experience****** */
+  .item{
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(0, 128, 107);
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-right: 400px;
+
+  }
+
+  .italics{
+    font-style: italic;
+    font-size: 15px;
+    color: gray
+    
+  }
+
+  .desc{
+    font-style: normal;
+    font-size: 15px;
+    color: black;
+    list-style-type: circle;
+  }
+
+  .divider{
+    margin-top: 20px;
+    border-top: 1px solid #bbb;
+    border-radius: 1px;
+  }
+
+  .title{
+    font-style: normal;
+    font-size: 25px;
+    color: black;
+    list-style-type: circle;
+  }
+
+  /* *******skills****** */
+
+  .skillTitle{
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+
+
+    /* *******showcase****** */
+
+    .margincard{
+      margin-top: 25px;
+      margin-bottom: 40px;
+    }
+
+    .test{
+      box-shadow: 1px 1px 5px grey;
+    }
+    .test:hover{
+      opacity:1;
+      box-shadow: 1px 1px 5px black;
+    }
+    
+    
+    .text {
+      color: black;
+      font-size: 16px;
+    }
+
+
+    .image{
+      opacity:0.7;
+      height: 120px;
+    }
+    .image:hover{
+      opacity:1;
+    }
+
+    .showcaseText{
+      color: black;
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+
+
+    /* *******Footer****** */
+
+    .containerFooter{
+      position:relative;
+      background: rgba(0, 0, 0, 0.9);
+      height: 4vh;
+    }
