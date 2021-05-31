@@ -69,31 +69,38 @@
   "skills": [
     {
       "name": "MS Project",
-      "level": "60%"
+      "level": "60%",
+      "icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Microsoft_Project_%282019%E2%80%93present%29.svg/1200px-Microsoft_Project_%282019%E2%80%93present%29.svg.png"
     },
     {
-      "name": "Illustrator",
-      "level": "55%"
+      "name": "ReactJs and React Native",
+      "level": "60%",
+      "icon":"https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/react-512.png"
     },
     {
-      "name": "ReactJs",
-      "level": "50%"
+      "name": "Python",
+      "level": "750%",
+      "icon":"https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png"
     },
     {
-      "name": "CSS",
-      "level": "90%"
+      "name": "PowerBI and Excel",
+      "level": "90%",
+      "icon":"https://www.tekenable.ie/wp-content/uploads/2019/09/PowerBI-Icon-Transparent.png"
     },
     {
-      "name": "HTML5",
-      "level": "80%"
+      "name": "MS SQL",
+      "level": "80%",
+      "icon":"https://img.icons8.com/color/452/microsoft-sql-server.png"
     },
     {
-      "name": "VueJs",
-      "level": "50%"
+      "name": "ISO-9001",
+      "level": "95%",
+      "icon":"https://st2.depositphotos.com/1431107/5469/v/950/depositphotos_54694491-stock-illustration-iso-9001-certified-icon.jpg"
     },
     {
-      "name": "MongoDB",
-      "level": "80%"
+      "name": "Crystal Reports",
+      "level": "80%",
+      "icon":"https://www.logolynx.com/images/logolynx/c2/c21c2f7659452010a243cb524eb7712f.png"
     }
   ],
   "projects": [

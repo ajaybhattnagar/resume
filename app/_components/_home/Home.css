@@ -17,6 +17,11 @@
 
   }
   
+  .navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
+  
 .testMargin{
     margin-top: 100px;
 }
@@ -121,6 +126,14 @@ html {
   .skillTitle{
     margin-left: -10px;
     margin-top: -10px;
+  }
+
+  .skillIcon{
+    height: 25px;
+  width: 25px;
+  position: absolute;
+  float: left;
+  margin-top: 15px;
   }
 
 
