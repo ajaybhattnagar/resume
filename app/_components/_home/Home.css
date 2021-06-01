@@ -44,7 +44,7 @@ html {
 .linkedinImage{
   height: 25px;
   width: 25px;
-  background-color: #bbb;
+  background-color: black;
   position: relative;
   margin-top: 200px;
 }
@@ -80,6 +80,13 @@ html {
       vertical-align: middle;
       border: 5px solid #555;
   }
+
+  .resumeD{
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+  
+}
 
 
 

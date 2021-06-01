@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import resumeData from '../../ResumeData.json'
 import face from '../../_images/Ajay.png'
+import linkedin from '../../_images/linkedin.png'
+import resume from '../../_images/resumeD.png'
 import './Home.css';
 import _ from 'lodash';
 
@@ -58,7 +60,7 @@ class Home extends Component {
                         <h1 class="text-center centerMainText text-white">I'm Ajay Bhattnagar</h1>
                         <p class="text-center centerMainText text-white descText " >I currently work as a Quality Specialist for POWERsonic Industries. </p>
                         <p class="text-center centerMainText text-white descText">How did I get here? Keep reading</p>
-                        <a href='https://www.linkedin.com/in/ajaybhattnagar/' target="_blank"> <img src="https://cdn3.iconfinder.com/data/icons/brands-applications/512/LinkedIN-512.png"
+                        <a href='https://www.linkedin.com/in/ajaybhattnagar/' target="_blank"> <img src={linkedin}
                             class='linkedinImage rounded mx-auto d-block img-fluid' alt="Logo"
                         /></a>
 
@@ -70,8 +72,9 @@ class Home extends Component {
                             <div class="container">
                                 <div class="row">
 
-                                    <div class="text-center">
+                                    <div>
                                         <img src={face} alt="Avatar" class='photo' />
+                                        
                                     </div>
                                     <div class="col text-center">
                                         <div class="col">
@@ -84,6 +87,7 @@ class Home extends Component {
                                             <h3>Contact</h3>
                                             <p> Email: ajay.bhattnagar21@gmail.com</p>
                                             <p> Phone: +1 (647) - 835 - 5617</p>
+                                            <a href='https://www.dropbox.com/s/dsmv9gji5u7izzr/Ajay%20-%20resume%20canada.pdf?dl=1' target="_blank"> <img src={resume} alt="Avatar" class='resumeD'  /> </a>
                                         </div>
                                     </div>
 
