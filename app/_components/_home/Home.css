@@ -41,18 +41,26 @@ html {
   margin-top: 20px;
 }
 
-.linkedinImage{
-  height: 25px;
-  width: 25px;
-  background-color: black;
+.socialIcon{
+  height: 40px;
+  width: 40px;
+  background-color:white;
   position: relative;
   margin-top: 200px;
+  align-self: baseline;
+  margin-left: 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: white;
+
+ 
 }
 
-.linkedinImage:hover{
+.socialIcon:hover{
   opacity:1;
-  height: 30px;
-  width: 30px; 
+  background-color: rgb(0, 128, 107);
+  border-color: rgb(0, 128, 107);
 }
 
 .navbarwidth{
@@ -82,12 +90,17 @@ html {
   }
 
   .resumeD{
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     margin-top: 30px;
   
 }
 
+.resumeD:hover{
+  height: 50px;
+  width: 50px;
+ 
+}
 
 
   /* *******experience****** */
