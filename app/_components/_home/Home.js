@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useRef} from 'react';
 import { connect } from 'react-redux';
 import resumeData from '../../ResumeData.json'
 
@@ -23,7 +23,12 @@ class Home extends Component {
             skill: [],
             showcase: []
         };
-    }
+   }
+
+    scrollToRef (ref) {
+        window.scrollTo(0, ref.current.offsetTop)   
+        console.log(window.pageYOffset)
+    } 
 
     componentDidMount() {
         this.setState({
@@ -37,7 +42,6 @@ class Home extends Component {
     }
 
 
-
     render() {
         const { data, education, work, skill, showcase } = this.state
         return (
@@ -45,9 +49,7 @@ class Home extends Component {
 
                 <div class=" jumbotron-fluid" >
 
-
-
-                    <nav id="navbar-example" class="navbar flex-column fixed-top pt-1 .navbar-fixed-top navbar-expand-lg navbar-nav-scroll">
+                    <nav id="navbar-example2" class="navbar flex-column fixed-top pt-1 .navbar-fixed-top navbar-expand-lg navbar-nav-scroll fadein100">
                         <a class="navbar-brand " href="#"></a>
                         <nav class="nav nav-pills flex-row font-weight-bold ">
                             <a class="nav-link ms-3 my-1" href="#home">Home</a>
@@ -58,237 +60,234 @@ class Home extends Component {
                     </nav>
 
 
-                    <div id="home" class=" containermain col" style={{
-                        backgroundImage: `url('https://image.winudf.com/v2/image/Y29tLmJsYWNrYmFja2dyb3VuZHdhbGxwYXBlcnNpbWFnZXNfc2NyZWVuXzEzXzE1MDkyNTIxNDFfMDU1/screen-13.jpg?fakeurl=1&type=.jpg')`,
-                        opacity: 0.85,
-                    }} >
-                        <h1 class="text-center centerMainText text-white">I'm Ajay Bhattnagar</h1>
-                        <p class="text-center centerMainText text-white descText " >I currently work as a Quality Specialist for POWERsonic Industries. </p>
-                        <p class="text-center centerMainText text-white descText">How did I get here? Keep reading</p>
+                        <div id="home" class=" containermain col" style={{
+                            backgroundImage: `url('https://image.winudf.com/v2/image/Y29tLmJsYWNrYmFja2dyb3VuZHdhbGxwYXBlcnNpbWFnZXNfc2NyZWVuXzEzXzE1MDkyNTIxNDFfMDU1/screen-13.jpg?fakeurl=1&type=.jpg')`,
+                            opacity: 0.88,
+                        }}>
+                            <h1 class="text-center centerMainText text-white">I'm Ajay Bhattnagar</h1>
+                            <p class="text-center centerMainText text-white descText " >I currently work as a Quality Specialist for POWERsonic Industries. </p>
+                            <p class="text-center centerMainText text-white descText">How did I get here? Keep reading</p>
 
-                        <div class='row text-center d-block'>
-                            <a href='https://www.linkedin.com/in/ajaybhattnagar/' target="_blank"> <img src={linkedin}
-                                class='socialIcon ' alt="Logo"
-                            /></a>
-                            <a href='https://twitter.com/Ajaybhattnagar' target="_blank"> <img src={twitter}
-                                class='socialIcon ' alt="Logo"
-                            /></a>
-                             <a href='https://www.instagram.com/ajaybhattnagar/' target="_blank"> <img src={insta}
-                                class='socialIcon ' alt="Logo"
-                            /></a>
-                             <a href='https://www.facebook.com/ajay.bhattnagar' target="_blank"> <img src={facebook}
-                                class='socialIcon ' alt="Logo"
-                            /></a>
-                        </div>
-
-                    </div>
-
-
-                    <div id="about" class='containerAbout text-white'>
-                        <div class="container">
-                            <div class="row">
-
-                                <div>
-                                    <img src={face} alt="Avatar" class='photo' />
-
-                                </div>
-                                <div class="col text-center">
-                                    <div class="col">
-                                        <h3>About me</h3>
-                                        <p> I actively work to eliminate customer defects, reduce the cost of poor quality to the organization, </p>
-                                        <p>and drive lean quality and manufacturing practices</p>
-
-                                    </div>
-                                    <div class="col">
-                                        <h3>Contact</h3>
-                                        <p> Email: ajay.bhattnagar21@gmail.com</p>
-                                        <p> Phone: +1 (647) - 835 - 5617</p>
-                                        <a href='https://www.dropbox.com/s/dsmv9gji5u7izzr/Ajay%20-%20resume%20canada.pdf?dl=1' target="_blank"> <img src={resume} alt="Avatar" class='resumeD' /> </a>
-                                    </div>
-                                </div>
-
+                            <div class='row text-center d-block fadein100'>
+                                <a href='https://www.linkedin.com/in/ajaybhattnagar/' target="_blank"> <img src={linkedin}
+                                    class='socialIcon ' alt="Logo"
+                                /></a>
+                                <a href='https://twitter.com/Ajaybhattnagar' target="_blank"> <img src={twitter}
+                                    class='socialIcon ' alt="Logo"
+                                /></a>
+                                <a href='https://www.instagram.com/ajaybhattnagar/' target="_blank"> <img src={insta}
+                                    class='socialIcon ' alt="Logo"
+                                /></a>
+                                <a href='https://www.facebook.com/ajay.bhattnagar' target="_blank"> <img src={facebook}
+                                    class='socialIcon ' alt="Logo"
+                                /></a>
                             </div>
                         </div>
-                    </div>
 
-                    {/* ///        Study               */}
-                    <div id="experience" class='container-fluid container justify-content-center flex-column testMargin'>
-                        <div id="experience">
+                        <div id="about" class='containerAbout text-white '>
                             <div class="container">
                                 <div class="row">
-                                    <p class='item'>Education</p>
 
-                                    <div class='col'>
-                                        {
-                                            education && education.length > 0 ?
+                                    <div class='fadein100 align-middle'>
+                                        <img src={face} alt="Avatar" class='photo' />
+                                    </div>
 
-                                                education.map((education, index) =>
+                                    <div class="col text-center">
+                                        <div class="col">
+                                            <h3>About me</h3>
+                                            <p> I actively work to eliminate customer defects, reduce the cost of poor quality to the organization, </p>
+                                            <p>and drive lean quality and manufacturing practices</p>
 
-                                                    <table class="table table-borderless">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col" class='title'>{education.school}</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <td scope="col" class='desc'>{education.degree}</td>
-                                                            <tr>
-                                                                <ul class='italics'>{education.graduated}</ul>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-
-
-                                                )
-                                                :
-                                                <div>null</div>
-
-                                        }
+                                        </div>
+                                        <div class="col">
+                                            <h3>Contact</h3>
+                                            <p> Email: ajay.bhattnagar21@gmail.com</p>
+                                            <p> Phone: +1 (647) - 835 - 5617</p>
+                                            <a href='https://www.dropbox.com/s/dsmv9gji5u7izzr/Ajay%20-%20resume%20canada.pdf?dl=1' target="_blank"> <img src={resume} alt="Avatar" class='resumeD' /> </a>
+                                        </div>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-                        <div class='divider' />
-                    </div>
 
-                    {/* ///        Study               */}
+                        {/* ///        Study               */}
+                        <div id="experience" class='container-fluid container justify-content-center flex-column testMargin'>
+                            <div id="experience">
+                                <div class="container">
+                                    <div class="row">
+                                        <p class='item'>Education</p>
 
+                                        <div class='col'>
+                                            {
+                                                education && education.length > 0 ?
 
+                                                    education.map((education, index) =>
 
-
-                    {/* ///        Work               */}
-                    <div id="item-1-1" class='container-fluid container justify-content-center flex-column testMargin'>
-                        <div id="experience">
-                            <div class="container">
-                                <div class="row">
-                                    <p class='item'>Experience</p>
-
-                                    <div class='col'>
-                                        {
-                                            work && work.length > 0 ?
-
-                                                work.map((work, index) =>
-
-                                                    <table class="table table-borderless">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col" class='title'>{work.employeer}</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <td scope="col" class='desc'>{work.position} <ul class='italics'>{work.duration}</ul> </td>
-                                                            <tr scope="col" class='desc'>
-                                                                {
-                                                                    work.description.map((data, index) =>
-                                                                        <ul>
-                                                                            <li class='desc'>{data}</li>
-                                                                        </ul>
-                                                                    )
-                                                                }
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-
-
-                                                )
-                                                :
-                                                <div>null</div>
-
-                                        }
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class='divider' />
-                    </div>
-                    {/* ///        Work               */}
-
-
-
-                    {/* ///        Skill               */}
-                    <div id="item-1-1" class='container-fluid container justify-content-center flex-column testMargin'>
-                        <div id="experience">
-                            <div class="container">
-                                <div class="row">
-                                    <p class='item'>Skills</p>
-
-                                    <div class='col'>
-                                        {
-                                            skill && skill.length > 0 ?
-
-                                                skill.map((data, index) =>
-                                                    <div class='row'>
-                                                        <img src={data.icon} class='skillIcon rounded mx-auto d-block img-fluid' alt="Logo" />
-                                                        <table class="table table-borderless table-sm ml-5">
+                                                        <table key={index} class="table table-borderless">
                                                             <thead>
                                                                 <tr>
-                                                                    <th scope="col" class='skillTitle'>{data.name}</th>
+                                                                    <th scope="col" class='title'>{education.school}</th>
                                                                 </tr>
-
                                                             </thead>
                                                             <tbody>
-                                                                <td scope="col" class='desc'>
-                                                                    <div class="progress">
-                                                                        <div class='progress-bar bg-info' role="progressbar" style={{ width: data.level }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                    </div>
-                                                                </td>
+                                                                <td scope="col" class='desc'>{education.degree}</td>
+                                                                <tr>
+                                                                    <ul class='italics'>{education.graduated}</ul>
+                                                                </tr>
                                                             </tbody>
                                                         </table>
-                                                    </div>
-
-                                                )
-                                                :
-                                                <div>null</div>
-
-                                        }
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class='divider' />
-                    </div>
-                    {/* ///        Skill               */}
 
 
-                    {/* ///        Showcase               */}
-                    <div id="showcase" class='container-fluid container justify-content-center flex-column margincard'>
-                        <div class='showcaseText text-center '>Check out some of my work.</div>
-                        <div class='row justify-content-md-center row-cols-5'>
+                                                    )
+                                                    :
+                                                    <div>null</div>
 
-                            {
-                                showcase && showcase.length > 0 ?
-                                    showcase.map((data, index) =>
-
-                                        <div class="card mx-3 test" style={{ width: '20rem' }}>
-                                            <a href={data.url} target="_blank">
-                                                <img src={data.image} class="card-img-top image" alt="..."></img>
-                                                <div class="card-body">
-                                                    <p class="card-text text">{data.title}</p>
-                                                </div>
-                                            </a>
+                                            }
                                         </div>
 
-
-                                    )
-                                    :
-                                    <div>null</div>
-
-                            }
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='divider' />
                         </div>
-                    </div>
-                    {/* ///        Showcase               */}
 
-                    {/* ///        Fotter               */}
-                    <div id="item-1-1" >
-                        <div class='containerFooter text-white text-center p-2'>
-                            <div>Designed by Ajay Bhattnagar</div>
+                        {/* ///        Study               */}
+
+
+
+
+                        {/* ///        Work               */}
+                        <div id="item-1-1" class='container-fluid container justify-content-center flex-column testMargin'>
+                            <div id="experience">
+                                <div class="container">
+                                    <div class="row">
+                                        <p class='item'>Experience</p>
+
+                                        <div class='col'>
+                                            {
+                                                work && work.length > 0 ?
+
+                                                    work.map((work, index) =>
+
+                                                        <table  key={index} class="table table-borderless">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col" class='title'>{work.employeer}</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <td scope="col" class='desc'>{work.position} <ul class='italics'>{work.duration}</ul> </td>
+                                                                <tr scope="col" class='desc'>
+                                                                    {
+                                                                        work.description.map((data, index) =>
+                                                                            <ul  key={index}>
+                                                                                <li class='desc'>{data}</li>
+                                                                            </ul>
+                                                                        )
+                                                                    }
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+
+
+                                                    )
+                                                    :
+                                                    <div>null</div>
+
+                                            }
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='divider' />
                         </div>
-                    </div>
-                    {/* ///        Fotter               */}
+                        {/* ///        Work               */}
 
+
+
+                        {/* ///        Skill               */}
+                        <div id="item-1-1" class='container-fluid container justify-content-center flex-column testMargin'>
+                            <div id="experience">
+                                <div class="container">
+                                    <div class="row">
+                                        <p class='item'>Skills</p>
+
+                                        <div class='col'>
+                                            {
+                                                skill && skill.length > 0 ?
+
+                                                    skill.map((data, index) =>
+                                                        <div key={index} class='row'>
+                                                            <img src={data.icon} class='skillIcon rounded mx-auto d-block img-fluid' alt="Logo" />
+                                                            <table class="table table-borderless table-sm ml-5">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col" class='skillTitle'>{data.name}</th>
+                                                                    </tr>
+
+                                                                </thead>
+                                                                <tbody>
+                                                                    <td scope="col" class='desc'>
+                                                                        <div class="progress">
+                                                                            <div class='progress-bar bg-info' role="progressbar" style={{ width: data.level }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+
+                                                    )
+                                                    :
+                                                    <div>null</div>
+
+                                            }
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='divider' />
+                        </div>
+                        {/* ///        Skill               */}
+
+
+                        {/* ///        Showcase               */}
+                        <div id="showcase" class='container-fluid container justify-content-center flex-column margincard'>
+                            <div class='showcaseText text-center '>Check out some of my work.</div>
+                            <div class='row justify-content-md-center row-cols-5'>
+
+                                {
+                                    showcase && showcase.length > 0 ?
+                                        showcase.map((data, index) =>
+
+                                            <div key={index} class="card mx-3 test" style={{ width: '20rem' }}>
+                                                <a href={data.url} target="_blank">
+                                                    <img src={data.image} class="card-img-top image" alt="..."></img>
+                                                    <div class="card-body">
+                                                        <p class="card-text text">{data.title}</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+
+                                        )
+                                        :
+                                        <div>null</div>
+
+                                }
+                            </div>
+                        </div>
+                        {/* ///        Showcase               */}
+
+                        {/* ///        Fotter               */}
+                        <div id="item-1-1" >
+                            <div class='containerFooter text-white text-center p-2'>
+                                <div>Designed by Ajay Bhattnagar</div>
+                            </div>
+                        </div>
+                        {/* ///        Fotter               */}
 
                 </div>
 

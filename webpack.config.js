@@ -18,7 +18,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
   },
-  mode: "production",
+  mode: "development",
   plugins: [
     new HtmlWebpackPlugin({
       template: "app/index.html",
