@@ -83,6 +83,11 @@
       "icon":"https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png"
     },
     {
+      "name": "Amazon AWS",
+      "level": "80%",
+      "icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/AWS_Simple_Icons_AWS_Cloud.svg/1024px-AWS_Simple_Icons_AWS_Cloud.svg.png"
+    },
+    {
       "name": "PowerBI and Excel",
       "level": "90%",
       "icon":"https://www.tekenable.ie/wp-content/uploads/2019/09/PowerBI-Icon-Transparent.png"

@@ -22,9 +22,7 @@
     transition: background-color 200ms linear;
   }
   
-.testMargin{
-    margin-top: 100px;
-}
+
 
 html {
     scroll-behavior: smooth;
@@ -76,7 +74,7 @@ html {
 .containerAbout {
     position:relative;
     background: rgba(0, 0, 0, 0.9);
-    height: 450px;
+    height: 600px;
     padding-top: 50px;
     /* z-index:2; */
     /* overflow:hidden; */
@@ -103,6 +101,26 @@ html {
  
 }
 
+.aboutDivider{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.aboutDivider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100;
+}
+
+.aboutDivider .shape-fill {
+  fill: #FFFFFF;
+}
+
 
   /* *******experience****** */
   .item{
@@ -121,6 +139,10 @@ html {
     color: gray
     
   }
+
+  .experienceMargin{
+    margin-top: 30px;
+}
 
   .desc{
     font-style: normal;
@@ -235,8 +257,20 @@ html {
         height: 100%;
       }
     }
+
+    
+  .navbarOnScroll {
+    /* overflow: hidden; */
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    /* width: 100%; */
+    height:fit-content;
+    transition: 0.3s ease-in-out;
+  }
   
 
 
-     /* ********    Back Ground Animation      ************** */
+     /* ********    Wave Dividers      ************** */
+
   
